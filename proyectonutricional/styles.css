@@ -1,0 +1,111 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: #45a049;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 80%;
+    max-width: 600px;
+}
+
+h2 {
+    color: #2f855a;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select {
+    margin: 5px 0 15px;
+    padding: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+button {
+    margin: 15px 0;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #38a169;
+}
+
+thead {
+    background-color: #38a169;
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e6ffed;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #c6f6d5;
+}
+
+p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.comida {
+    font-weight: bold;
+}

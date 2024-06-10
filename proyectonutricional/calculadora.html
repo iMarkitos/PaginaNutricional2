@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Macronutrientes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="nutri.ico" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">IMC</a></li>
+            <li><a href="calculadora.html">Calculadora de Macronutrientes</a></li>
+            <li><a href="valoracion.html">Valoración Nutricional</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Calculadora de Macronutrientes Diarios</h2>
+        <label for="sexo">Sexo:</label>
+        <select id="sexo">
+            <option value="">Seleccione</option>
+            <option value="male">Masculino</option>
+            <option value="female">Femenino</option>
+        </select>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad">
+        <label for="actividad">Nivel de Actividad Física:</label>
+        <select id="actividad">
+            <option value="">Seleccione</option>
+            <option value="sedentary">Sedentario</option>
+            <option value="light">Ligera</option>
+            <option value="moderate">Moderada</option>
+            <option value="active">Activa</option>
+        </select>
+        <label for="pesoCarb">Peso (kg):</label>
+        <input type="number" id="pesoCarb">
+        <label for="alturaCarb">Altura (cm):</label>
+        <input type="number" id="alturaCarb">
+        <label for="objetivo">¿Cuál es tu objetivo?:</label>
+        <select id="objetivo">
+            <option value="">Seleccione</option>
+            <option value="ganar">Ganar Masa</option>
+            <option value="perder">Perder Masa</option>
+            <option value="mantenimiento">Mantenimiento</option>
+        </select>
+        <button onclick="calcularMacronutrientes()">Calcular Macronutrientes</button>
+        <p id="resultadoMacronutrientes"></p>
+    </section>
+
+    <section>
+        <h2>¿Qué son los Macronutrientes?</h2>
+        <p>Los macronutrientes son aquellos tipos de nutrientes que se encuentran en grandes cantidades en los alimentos. Además de ser los responsables de aportar la energía necesaria para el día a día, promueven el crecimiento y regulan los procesos metabólicos.</p>
+        <p>Principalmente se encuentran en las proteínas, grasas e hidratos de carbono, cumpliendo cada uno con sus funciones principales haciendo que el cuerpo tenga un buen estado de salud.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
